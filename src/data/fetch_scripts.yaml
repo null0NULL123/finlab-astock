@@ -1,0 +1,77 @@
+# 数据抓取脚本配置
+# src/data/cli.py 读取此配置来执行数据更新
+# 脚本路径相对于项目根目录
+
+etf:
+  - name: 获取 ETF 列表
+    script: scripts/etf/fetch_all_etfs_akshare.py
+    args: []
+    description: 获取全市场 ETF 列表
+
+  - name: 下载 ETF 历史行情
+    script: scripts/etf/download_etf_nav.py
+    args: []
+    description: 下载 ETF 历史行情数据
+
+  - name: 下载 ETF 持仓
+    script: scripts/etf/download_etf_holdings.py
+    args: []
+    description: 下载 ETF 持仓数据
+
+  - name: 下载 ETF 规模
+    script: scripts/etf/download_etf_scale.py
+    args: []
+    description: 下载 ETF 规模数据
+
+fund:
+  - name: 获取公募基金列表
+    script: scripts/fund/fetch_all_public_funds_akshare.py
+    args: []
+    description: 获取开放式公募基金列表
+
+  - name: 下载基金历史净值
+    script: scripts/fund/download_fund_nav.py
+    args: []
+    description: 下载基金历史净值数据
+
+  - name: 下载基金详情
+    script: scripts/fund/download_fund_details.py
+    args: ["--basic", "--fees", "--nav", "--holdings"]
+    description: 下载基金详情数据（档案、费率、净值、持仓）
+
+  - name: 下载全局基金数据
+    script: scripts/fund/download_global_fund_data.py
+    args: []
+    description: 下载基金经理变动、份额规模变动等宏观统计数据
+
+sw_level2:
+  - name: 获取申万二级行业列表
+    script: scripts/sw_level2/get_sw_level2_industries.py
+    args: []
+    description: 获取申万二级行业清单
+
+  - name: 获取行业成分股
+    script: scripts/sw_level2/get_sw_level2_constituents.py
+    args: []
+    description: 获取行业成分股
+
+  - name: 获取行业日度历史
+    script: scripts/sw_level2/get_sw_level2_daily_history.py
+    args: []
+    description: 抓取行业日度指标并汇总
+
+stock_macro:
+  - name: 下载股票基本信息
+    script: scripts/stock_macro/download_stock_basic_info.py
+    args: ["--all"]
+    description: 下载全市场 A 股股票基本信息
+
+  - name: 下载股票日线数据
+    script: scripts/stock_macro/download_stock_daily.py
+    args: ["--popular", "--start", "20230101", "--end", "20260503"]
+    description: 下载热门股票日线数据
+
+  - name: 下载宏观数据
+    script: scripts/stock_macro/get_macro_data.py
+    args: []
+    description: 下载宏观数据（CPI、PPI、GDP、PMI 等）

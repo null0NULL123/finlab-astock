@@ -443,3 +443,5 @@ class Database:
         sql = "SELECT * FROM email_logs ORDER BY date DESC, time DESC LIMIT ?"
         with self._get_conn() as conn:
             return pd.read_sql_query(sql, conn, params=[limit])
+
+# Updated: 2025-01-21

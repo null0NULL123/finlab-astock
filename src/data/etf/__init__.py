@@ -16,3 +16,5 @@ __all__ = [
     "EtfNavFetcher",
     "EtfScaleFetcher",
 ]
+
+# Updated: 2025-02-04

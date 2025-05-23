@@ -121,3 +121,5 @@ if __name__ == "__main__":
         if "总市值" in result.columns:
             print("\n规模最大的前 10 只 ETF:")
             print(result[["代码", "名称", "总市值"]].head(10))
+
+# Updated: 2025-05-23

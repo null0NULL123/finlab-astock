@@ -26,6 +26,4 @@ __all__ = [
     "write_cluster_summary",
 ]
 
-# Updated: 2025-01-19
 
-# Updated: 2026-04-02

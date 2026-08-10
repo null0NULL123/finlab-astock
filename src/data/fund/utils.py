@@ -150,4 +150,3 @@ def print_stats(stats: dict, desc: str = "下载"):
         f"失败/无数据: {stats['fail']}"
     )
 
-# Updated: 2026-02-14

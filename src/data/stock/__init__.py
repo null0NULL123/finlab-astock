@@ -11,6 +11,4 @@ __all__ = [
     "POPULAR_STOCKS",
 ]
 
-# Updated: 2025-06-24
 
-# Updated: 2026-05-06

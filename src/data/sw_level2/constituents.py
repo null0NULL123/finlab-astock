@@ -286,8 +286,5 @@ def main() -> int:
 if __name__ == "__main__":
     raise SystemExit(main())
 
-# Updated: 2025-08-13
 
-# Updated: 2025-11-12
 
-# Updated: 2026-04-13

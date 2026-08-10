@@ -154,8 +154,5 @@ WEIGHT_COL_CANDIDATES = ["占净值比例", "持仓占比", "权重", "weight", 
 SNAPSHOT_COL_CANDIDATES = ["季度", "日期", "报告期", "持仓日期", "净值日期"]
 NAME_COL_CANDIDATES = ["名称", "股票名称", "证券名称", "基金简称"]
 
-# Updated: 2025-03-14
 
-# Updated: 2025-11-19
 
-# Updated: 2025-12-24

@@ -186,10 +186,6 @@ if __name__ == "__main__":
         print(f"列名: {list(result.columns)}")
         print(result.head())
 
-# Updated: 2025-05-09
 
-# Updated: 2025-07-22
 
-# Updated: 2026-01-16
 
-# Updated: 2026-03-13

@@ -114,8 +114,5 @@ def main() -> int:
 if __name__ == "__main__":
     raise SystemExit(main())
 
-# Updated: 2025-04-13
 
-# Updated: 2025-08-10
 
-# Updated: 2026-06-07

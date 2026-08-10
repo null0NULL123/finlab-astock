@@ -241,4 +241,3 @@ def write_cluster_summary(
     summary_path.parent.mkdir(parents=True, exist_ok=True)
     summary_path.write_text("\n".join(lines), encoding="utf-8")
 
-# Updated: 2026-03-17

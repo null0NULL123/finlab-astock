@@ -444,8 +444,5 @@ class Database:
         with self._get_conn() as conn:
             return pd.read_sql_query(sql, conn, params=[limit])
 
-# Updated: 2025-01-21
 
-# Updated: 2025-07-17
 
-# Updated: 2025-09-25

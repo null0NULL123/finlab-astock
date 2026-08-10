@@ -127,4 +127,3 @@ class DataFetcher(BaseFetcher):
             self.logger.exception("获取数据失败: {}", self.name)
             raise
 
-# Updated: 2025-04-16

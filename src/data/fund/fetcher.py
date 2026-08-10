@@ -110,4 +110,3 @@ if __name__ == "__main__":
         print(f"\n总计: {len(result)} 只基金")
         print(f"列名: {list(result.columns)}")
 
-# Updated: 2026-03-04
